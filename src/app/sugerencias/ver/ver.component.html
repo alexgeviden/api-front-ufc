@@ -1,0 +1,16 @@
+<h1 style="text-align: center;">Sugerencias</h1>
+<section id="suggest">
+  <div id="sugerencia" *ngFor="let sug of data">
+<p>ID : {{sug.id}}</p>
+<p>Usuario : {{sug.usuario}}</p>
+<p>Correo : {{sug.correo}}</p>
+<p>Evento : {{sug.evento}}</p>
+<p>Luchadores</p>
+<ul>
+  <li *ngFor="let luchadores of sug.peleas">{{luchadores}}</li>
+</ul>
+
+<p>Descripcion : </p>
+<p>{{sug.descripcion}}</p>
+  </div>
+</section>
